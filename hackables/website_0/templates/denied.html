@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Nevel Papperman's Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="admin">
+            <h1>Nevel only. No exceptions.</h1>
+            <img src="{{ url_for('static', filename='nevel_laughing.png') }}" alt="Nevel Papperman laughing at you for guessing the password wrong" width="236" height="273">
+            <p>Hahahaha! Nice try! That's not the correct password!</p>
+        </div>
+    </body>
+</html>  

@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Nevel Papperman's Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="home">
+            <h1>Welcome to my (Nevel's) website!</h1>
+            <img src="{{ url_for('static', filename='nevel.png') }}" alt="An image of Nevel Papperman" width="250" height="250">
+            <p>Take a look around! Read my blog. I have some very important things to say. Just don't access that admin stuff! That's off limits!!!</p>
+        </div>
+    </body>
+</html>  

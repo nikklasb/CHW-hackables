@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Nevel Papperman's Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="admin">
+            <h1>Nevel only. No exceptions.</h1>
+            <form method="post">
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <input type="submit" value="Submit">
+            </form>
+            <button onclick="document.getElementById('secret-content').hidden = false"}>
+                Password Hint
+            </button>
+            <div id="secret-content" hidden>
+                <p>In case I forget: The password is my favorite animal followed by the year I was born.</p>
+            </div>
+        </div>
+    </body>
+</html>  
