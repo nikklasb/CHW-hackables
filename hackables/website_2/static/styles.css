@@ -1,0 +1,23 @@
+body.home {
+  background-color: lightgreen;
+}
+
+body.solution {
+  background-color: burlywood;
+}
+
+h1 {
+  text-align: center;
+}
+
+div.home {
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+div.flag {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
