@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Nevel Papperman's 2nd Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="home">
+            <h1>Nevel here. This is my new blog! I figured I'd just start this one since it's been a while.</h1>
+            <img src="{{ url_for('static', filename='nevel_old.png') }}" alt="An image of Nevel Papperman">
+            <p>As usual, take a look around and read my blog. It's a lot more updated than my old one.</p>
+        </div>
+    </body>
+</html>  

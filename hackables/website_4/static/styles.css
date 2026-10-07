@@ -1,0 +1,39 @@
+body {
+  background-color: wheat;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  background-color: gainsboro;
+  color: black;
+  border: 2px solid black;
+  padding: 20px;
+  padding-right: 40px;
+  padding-left: 40px; 
+}
+
+div.blog {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+div.home {
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+div.admin {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
