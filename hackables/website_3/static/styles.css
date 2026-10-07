@@ -1,0 +1,23 @@
+body.home {
+  background-color: orange;
+}
+
+body.solution {
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+div.home {
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+div.flag {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
