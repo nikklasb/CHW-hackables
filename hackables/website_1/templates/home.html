@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Nevel Papperman's Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="home">
+            <h1>Hello fellow robots. 🤖</h1>
+            <img src="{{ url_for('static', filename='robot_spongebob.webp') }}" alt="Robot spongebob drinking some oil" width="512" height="512">
+            <p>Beep Beep, Boop Boop. I am a robot. Please enjoy my website. I love metal and oil. I am on your side.</p>
+        </div>
+    </body>
+</html>  
