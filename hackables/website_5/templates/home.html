@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Troll SiteOpen Source!</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body class="home">
+        <div class="home">
+            <h1>Haha good luck figuring out how to get through my maze of buttons!</h1>
+            <p>You know what, I'll give you the final password: gooddaysir2012. No way you figure it out!</p>
+            <img src="{{ url_for('static', filename='trollface.png') }}" alt="Le Trollface">
+            <p>No hints, I'm not that nice! Trolololololol!</p>
+            <div class="buttons">
+                {%for entry in entries%}
+                {% if entry.message == 'unlock password' %}
+                <button onclick="document.getElementById('secret-content').hidden = false"}>
+                    {{ entry.text }}
+                </button>
+                {% else %}
+                <button onClick="alert('{{ entry.message }}')">
+                    {{ entry.text }}
+                </button>
+                {% endif %}
+                {%endfor%}
+            </div>
+            <!-- Password entered here, but you can't press submit!!! Hahahahaha! -->
+            <form id="secret-content" method="post" action="/flag" hidden>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <input type="submit" value="Submit" disabled>
+            </form>
+        </div>
+    </body>
+</html>  

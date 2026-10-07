@@ -1,0 +1,29 @@
+body.home {
+  background-color: white;
+}
+
+body.solution {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+div.home {
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+div.denied {
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+div.flag {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
