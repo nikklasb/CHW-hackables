@@ -31,7 +31,6 @@ def my_blog():
 def admin_page():
     if request.method == "POST":
         password = request.form.get('pwd')
-        print(password)
         if password == 'lemur2002':
             return render_template('flag.html')
         else:
