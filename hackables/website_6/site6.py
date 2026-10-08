@@ -48,11 +48,6 @@ def offers():
         item['price'] = f"${item['price']:,.2f}"
     return render_template('offers.html', items=items)
 
-@app.route("/robots.txt")
-def robots():
-    file_contents = open("./static/robots.txt", "r").read()
-    return Response(file_contents, mimetype='text/plain')
-
 @app.route("/super-secret-page")
 def solution():
     return render_template('flag.html')
