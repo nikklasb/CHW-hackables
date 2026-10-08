@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>ECommerce Site</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="offers">
+            <h1>Here are my offerings of refurbished hardware:</h1>
+            {%for item in items%}
+            <h2>{{ item.name }} {{ item.price }}</h2>
+            <p>{{ item.description }}</p>
+            {%endfor%}
+        </div>
+    </body>
+</html>
