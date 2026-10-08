@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(207, 179, 207);
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  background-color: silver;
+  color: black;
+  border: 2px solid black;
+  padding: 20px;
+  padding-right: 40px;
+  padding-left: 40px; 
+}
+
+article {
+  border: 2px solid black; 
+}
+
+div.caesar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.home {
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+div.denied {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}

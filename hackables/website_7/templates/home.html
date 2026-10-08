@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Julius Caesar Fan Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="home">
+            <h1>Welcome to my Julius Caesar Fan Page!</h1>
+            <p>See if you can figure out my password to see super secret Caesar content!</p>
+            <p>If it helps, here's my encrypted password: "gvvwdtwvg". The key I used was 2.</p>
+            <form method="post" action="/flag">
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>  

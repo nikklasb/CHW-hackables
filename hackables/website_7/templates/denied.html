@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Julius Caesar Fan Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="denied">
+            <h1>That's not right!</h1>
+            <p>Try again! I used a special cipher to encode the password, see if you can find it!</p>
+        </div>
+    </body>
+</html>  

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Julius Caesar Fan Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="caesar">
+            <h1>Here are some cool links to things about Julius Caesar:</h1>
+            <img src="{{ url_for('static', filename='caesar.jpg') }}" alt="A bust of Julius Caesar">
+            <p>The man himself: <a href="https://en.wikipedia.org/wiki/Julius_Caesar">https://en.wikipedia.org/wiki/Julius_Caesar</a></p>
+            <p>What he ruled: <a href="https://en.wikipedia.org/wiki/Roman_Empire">https://en.wikipedia.org/wiki/Roman_Empire</a></p>
+            <p>How he communicated secretly: <a href="https://en.wikipedia.org/wiki/Caesar_cipher">https://en.wikipedia.org/wiki/Caesar_cipher</a></p>
+            <p>How he died: <a href="https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar">https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar</a></p>
+        </div>
+    </body>
+</html>
