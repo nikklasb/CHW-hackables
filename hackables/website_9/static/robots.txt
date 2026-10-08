@@ -1,0 +1,6 @@
+User-agent: HumanBot
+Disallow: /xhklow/klm
+Disallow: /mklmbvf2
+
+User-agent: *
+Allow: / 
