@@ -1,14 +1,13 @@
 from flask import (
     Flask,
     render_template,
-    request,
-    Response
+    request
 )
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
+def home():
     return render_template('home.html')
 
 @app.route("/offers")
@@ -47,7 +46,3 @@ def offers():
     for item in items:
         item['price'] = f"${item['price']:,.2f}"
     return render_template('offers.html', items=items)
-
-@app.route("/super-secret-page")
-def solution():
-    return render_template('flag.html')
