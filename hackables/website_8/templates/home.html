@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Open Source!</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body class="home">
+        <div class="home">
+            <h1>Welcome to my (NOW SAFE) open source website!</h1>
+            <img src="{{ url_for('static', filename='hackerman-shs.webp') }}" alt="Hackerman using a Superhero Squad laptop" width="384" height="512">
+            <p>You can still look at my code if you want. Isn't that awesome?!</p>
+            <a href="/source_code">SOURCE CODE</a>
+            <h2>Enter the password to see the protected stuff. This time only approved people should be able to...</h2>
+            <form method="post" action="/flag">
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <input type="submit" value="Submit">
+            </form>
+            <script src="{{ url_for('static', filename='pwcheck.js') }}"></script>
+        </div>
+    </body>
+</html>
