@@ -17,5 +17,13 @@
             </form>
             <script src="{{ url_for('static', filename='pwcheck.js') }}"></script>
         </div>
+        <div class="hints">
+            <button onclick="document.getElementById('hint0').hidden = false"}>
+                Hint if You're Stuck
+            </button>
+            <div id="hint0" hidden>
+                <p>The programmer hid the password in a file! I wonder if you can access that file...</p>
+            </div>
+        </div>
     </body>
 </html>
