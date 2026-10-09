@@ -22,6 +22,6 @@ def source():
 def flag():
     if request.method == "POST":
         password = request.form.get('pwd')
-        if password == "Hello," + " " + "there.":
+        if password == "open" + "123":
             return render_template('flag.html')
     return redirect(url_for('home', failed='yes'), code=302)
