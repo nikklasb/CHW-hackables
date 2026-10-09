@@ -1,0 +1,5 @@
+Many web pages have a special path at /robots.txt. It is located at url + /robots.txt:  
+For the website Amazon, https://www.amazon.com  -->  https://www.amazon.com/robots.txt  
+Keep in mind everything before the third / (counting ```http://``` as the first two) is the base url.
+
+It specifies what pages web crawling robots can access, but it also gives you information about what pages exist on a site!

@@ -8,8 +8,13 @@ from flask import (
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
+def home():
     return render_template('home.html')
+
+@app.route("/robots_help")
+def robots_help():
+    text = open('./static/robots_explanation.txt', 'r').read()
+    return Response(text, mimetype='text/plain')
 
 @app.route("/favorites")
 def favorites():
@@ -28,11 +33,6 @@ def favorites():
             'title': 'Baymax',
             'filename': 'baymax.webp',
             'description': 'Such a selfless robot, truly an inspiration for all of us.'
-        },
-        {
-            'title': 'Psssst!',
-            'filename': 'robot_guy.jpg',
-            'description': 'Hey I\'m not actually a robot... I just want to be on their good side when they eventually take over. Take a look here and maybe you can find my secret page only for humans: https://www.robotstxt.org/robotstxt.html.'
         }
     ]
     return render_template('favorites.html', entries=entries)

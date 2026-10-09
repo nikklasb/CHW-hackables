@@ -1,5 +1,5 @@
 #
-# 
+# You found my robots.txt, now go to my secret page!
 #
 
 User-agent: *

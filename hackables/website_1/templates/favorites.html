@@ -15,6 +15,11 @@
                 <p>{{ entry.description }}</p>
             </div>
             {%endfor%}
+            <div class="favorites">
+                <h2>Psssst!</h2>
+                <img src="{{ url_for('static', filename='robot_guy.jpg') }}" alt="A picture of a robot" width="512" height="512">
+                <p>Hey I'm not actually a robot... I just want to be on their good side when they eventually take over. Take a look here and maybe you can find my secret page only for humans: <a href=/robots_help>here</a>.</p>
+            </div>
         </div>
     </body>
 </html>  
